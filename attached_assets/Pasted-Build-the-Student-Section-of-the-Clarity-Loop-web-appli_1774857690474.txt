@@ -1,0 +1,168 @@
+Build the Student Section of the Clarity Loop web application using React. This section must be fully functional, data-driven, and interactive, with no static placeholders or non-working elements.
+
+Objective
+
+Create a complete student experience where a user can:
+
+Browse and read story-based lessons
+Interact with content (highlight, simplify, doubts)
+Attempt quizzes
+Track performance and progress
+Continue learning based on weak areas
+Tech Requirements
+React (Vite)
+React Router
+React Hooks (useState, useEffect)
+localStorage for persistence
+Pages to Implement
+Library Page
+Reader Page
+Student Dashboard
+1. Library Page (Dynamic Story Listing)
+Data Source
+
+Create stories.json:
+
+[
+  {
+    "id": 1,
+    "title": "The Car Race and Velocity",
+    "subject": "Physics",
+    "story": "A race between two cars explains velocity...",
+    "concept": "Velocity is speed with direction...",
+    "keyPoints": ["Velocity has direction", "Speed is scalar"],
+    "questions": [
+      { "q": "Define velocity", "a": "Velocity is speed in a given direction" }
+    ]
+  }
+]
+Required Features
+Load all stories dynamically
+Display:
+Title
+Subject
+Short preview
+Add search and subject filter (basic logic)
+On click → navigate to Reader page with story ID
+2. Reader Page (Core Learning System)
+Data Handling
+Fetch story by ID from stories.json
+Features to Implement
+A. Scroll Progress
+Track scroll percentage
+Update progress bar in real time
+B. Story Sections Rendering
+
+Render dynamically:
+
+Story
+Concept
+Key Points
+Exam Questions
+C. Highlight + Interaction
+Allow text selection
+Show tooltip with:
+Simplify → open popup with simplified explanation
+Ask Doubt → send selected text to doubt chat
+D. Exam Questions
+Click question → toggle answer visibility
+Store which questions were viewed
+E. Exam Mode
+Button opens overlay
+Convert content into:
+Bullet notes
+Key definitions
+Short answers
+3. Quiz System (Inside Reader)
+Add MCQ questions (can be static or from JSON)
+On selecting an option:
+Show correct/incorrect
+Lock the question
+Calculate total score
+Save score in localStorage
+4. Doubt Solving (Simulated Chat)
+UI
+Chat box inside Reader page or side panel
+Logic
+Input field for question
+Simple keyword-based response:
+if (input.includes("velocity")) {
+  return "Velocity is speed with direction."
+}
+Display messages in chat format
+5. Student Dashboard (Dynamic)
+Data (localStorage or mock)
+{
+  "name": "Rahul",
+  "accuracy": 72,
+  "completedStories": [1],
+  "weakTopics": ["Thermodynamics"]
+}
+Features
+A. Stats Section
+Accuracy %
+Stories completed
+Quiz performance
+B. Continue Learning
+Show last opened or incomplete story
+Button → resume reading
+C. Weak Topics
+Display weak topics
+Add progress bars or indicators
+D. Activity Tracking
+Show recent actions:
+Story completed
+Quiz attempted
+6. Data Persistence
+
+Use localStorage to store:
+
+Completed stories
+Quiz scores
+Last opened story
+User performance
+
+Ensure:
+
+Data persists after refresh
+UI updates based on stored data
+7. Navigation Flow
+Library → Reader
+Reader → Dashboard
+Dashboard → Resume story
+
+Ensure smooth routing using React Router
+
+8. Interaction Rules (Strict)
+
+Every interactive element must:
+
+Have a visible effect
+Update state or UI
+Reflect real behavior
+
+Not allowed:
+
+Dummy buttons
+Static data where dynamic is required
+9. UI Constraint
+Use existing HTML/CSS design
+Do not redesign layout
+Only integrate logic and functionality
+10. Output Requirements
+Fully functional student module
+Clean component structure
+Reusable logic functions
+Commented code
+Runs with:
+npm install
+npm run dev
+Final Requirement
+
+The student section must behave like a real learning system:
+
+Data changes with user actions
+Progress is tracked
+Learning flow is continuous
+
+No part of the UI should feel static or fake.

@@ -1,0 +1,191 @@
+Build a complete, fully functional web application named Clarity Loop by converting an existing static HTML/CSS prototype into a working system. All pages, buttons, and UI elements must be interactive and connected. No placeholder or non-functional elements are allowed.
+
+Objective
+
+Transform the static UI into a realistic application simulation with:
+
+Functional navigation across all pages
+Dynamic data-driven rendering
+Working user interactions
+Persistent state using localStorage
+Clear separation of components and logic
+Technology Requirements (Mandatory)
+React (with Vite)
+React Router for navigation
+React Hooks for state management
+localStorage for persistence
+Chart library (Recharts or Chart.js)
+Project Structure
+/src
+  /components
+  /pages
+    Home.jsx
+    Library.jsx
+    Reader.jsx
+    StudentDashboard.jsx
+    TeacherDashboard.jsx
+    Auth.jsx
+  /data
+    stories.json
+    users.json
+  /utils
+    storage.js
+    logic.js
+  App.jsx
+  main.jsx
+Functional Requirements
+1. Navigation System
+Implement routing using React Router
+Pages must include:
+Home
+Library
+Reader
+Student Dashboard
+Teacher Dashboard
+Login/Signup
+Add protected routes:
+Student dashboard accessible only to student role
+Teacher dashboard accessible only to teacher role
+Maintain active navigation state
+2. Story System (Core Logic)
+
+Create a stories.json file with structured data:
+
+{
+  "id": 1,
+  "title": "The Car Race and Velocity",
+  "subject": "Physics",
+  "story": "...",
+  "concept": "...",
+  "keyPoints": ["...", "..."],
+  "questions": [
+    { "q": "...", "a": "..." }
+  ]
+}
+
+Required behavior:
+
+Load stories dynamically into the Library page
+Clicking a story opens the Reader page with correct data
+Render all sections dynamically (story, concept, key points, questions)
+3. Reader Page Functionality
+
+Implement the following:
+
+Scroll Progress
+Track scroll position
+Update progress bar in real time
+Text Interaction
+Allow text selection
+Show floating tooltip with options:
+Simplify: display simplified explanation popup
+Ask Doubt: send selected text to doubt chat
+Exam Questions
+Clicking a question toggles answer visibility
+Exam Mode
+Button opens overlay
+Convert content into:
+Bullet points
+Key notes
+Short answers
+4. Quiz System
+Multiple choice questions
+On option selection:
+Show correct or incorrect state
+Disable further selection for that question
+Store score in localStorage
+Display result summary after completion
+5. Student Dashboard
+
+Load mock data such as:
+
+{
+  "name": "Rahul",
+  "accuracy": 72,
+  "completed": 10,
+  "weakTopics": ["Thermodynamics"]
+}
+
+Display:
+
+Dynamic stats (accuracy, completed topics)
+Weak topics with progress indicators
+Continue learning section (based on incomplete stories)
+6. Teacher Dashboard
+
+Load mock class data:
+
+{
+  "students": 50,
+  "avgScore": 68,
+  "atRisk": 12
+}
+
+Display:
+
+Analytics charts (weekly performance)
+Student performance list
+At-risk students with indicators
+7. Doubt Solving System (Simulated)
+Input field for user queries
+Implement simple keyword-based response logic
+
+Example:
+
+if (input.includes("velocity")) {
+  return "Velocity is speed with direction."
+}
+Display chat-style interaction
+8. Authentication System
+Implement login and signup forms
+Store user data in localStorage
+Include role selection:
+student
+teacher
+
+Behavior:
+
+After login:
+Student → redirect to student dashboard
+Teacher → redirect to teacher dashboard
+9. Data Persistence
+
+Use localStorage to store:
+
+User session
+Completed stories
+Quiz scores
+Progress tracking
+
+Ensure data persists after page reload
+
+10. Button and Interaction Rules
+
+Every button must:
+
+Have a click handler
+Perform a visible action
+Update UI or state
+
+Not allowed:
+
+Buttons without functionality
+Console-only actions
+Static placeholders
+UI Constraint
+Preserve the existing design and layout
+Do not redesign UI
+Only add functionality and logic
+Output Requirements
+Fully working React application
+Clean and modular code structure
+Proper separation of concerns
+Comments explaining logic
+Application must run using:
+npm install
+npm run dev
+Enforcement Rules
+No dead links or buttons
+No hardcoded static rendering where dynamic data is expected
+All major features must demonstrate working logic
+Application must behave like a real product simulation

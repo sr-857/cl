@@ -1,0 +1,12 @@
+packages:
+  "framer-motion": "For smooth page transitions and interactive micro-animations"
+  "recharts": "For student and teacher dashboard analytics charts"
+
+images:
+  - path: "artifacts/clarity-loop/public/images/hero-bg.png"
+    description: "Abstract modern gradient mesh background in bright blue, soft purple, and white, clean educational tech aesthetic, soft light leaks"
+    aspect_ratio: "16:9"
+
+notes:
+  - Application uses localStorage exclusively for persistence (cl_users, cl_session, cl_progress)
+  - Custom events are used to communicate between Reader text selection and the DoubtChat floating widget

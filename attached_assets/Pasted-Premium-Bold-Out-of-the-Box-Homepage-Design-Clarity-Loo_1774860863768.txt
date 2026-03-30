@@ -1,0 +1,118 @@
+Premium, Bold, Out-of-the-Box Homepage Design (Clarity Loop)
+
+Design a high-end, visually striking homepage for an educational platform called Clarity Loop. The design must feel premium, modern, and unique — not like a typical AI-generated template or generic SaaS layout.
+
+Core Design Intent
+Make the homepage feel expensive, cinematic, and memorable
+Avoid boring education-style layouts
+Focus on visual storytelling + strong first impression
+Prioritize aesthetic + clarity + emotional impact
+Hero Section (Most Important)
+
+Design a dominant, scroll-stopping hero section:
+
+Requirements:
+Full-screen height
+Bold headline with strong typography contrast
+Short, powerful subtext (not paragraph-heavy)
+One primary CTA (clear and strong)
+Visual Style:
+Use layered elements:
+Floating cards (story preview)
+Soft gradients or subtle glow
+Depth using shadows and blur
+Add a live-looking story preview card:
+Title
+Short text
+Progress bar
+Author tag
+
+👉 It should feel like: “this is not a normal website”
+
+Layout Philosophy
+Avoid strict grid everywhere
+Use asymmetry + spacing + hierarchy
+Mix:
+Large empty space (breathing room)
+Tight content blocks (focus)
+Typography (Critical)
+Use serif for headlines (premium feel)
+Use clean sans-serif for UI
+
+Rules:
+
+Big headings (not small SaaS text)
+Tight line height for titles
+Comfortable reading for body
+Color Direction
+No default blue SaaS palette
+
+Use:
+
+Deep neutral base (warm beige / charcoal / off-white)
+Accent:
+Burnt orange / amber (primary)
+Deep green (secondary)
+Soft gold (highlight)
+
+Keep it:
+
+Rich, not flashy
+Controlled, not colorful chaos
+Sections After Hero
+1. “How It Works” (Visual, Not Text Heavy)
+Show flow:
+Story → Concept → Exam → Performance
+Use icons + minimal text
+Add subtle connection lines or motion feel
+2. Feature Blocks
+Card-based layout
+Each card:
+Icon
+Title
+1–2 line explanation
+Add hover effect:
+Slight lift
+Border highlight
+3. Story Preview Section
+Show 2–3 example story cards
+Each card:
+Subject tag
+Title
+Short preview
+“Read” button
+
+Make them feel clickable and alive
+
+4. Social Proof / Trust Section
+Minimal but clean
+Use:
+Stats (students, stories, accuracy)
+Short testimonials
+5. Final CTA Section
+Strong contrast background (dark or navy)
+Big headline
+One clear action button
+Interaction Design
+Smooth hover transitions (no lag)
+Micro-interactions:
+Button press feedback
+Card hover lift
+Subtle motion only (no over-animation)
+What to Avoid (Strict)
+No template-looking layouts
+No heavy gradients everywhere
+No random bright colors
+No clutter
+No “AI-generated landing page vibe”
+Output Requirement
+Clean, modern, premium homepage design
+Ready to convert into React/Tailwind
+Consistent spacing, typography, and color system
+Final Design Standard
+
+The homepage should feel like:
+
+A product people trust immediately
+Something that stands out in a portfolio
+Not made by AI in 5 minutes

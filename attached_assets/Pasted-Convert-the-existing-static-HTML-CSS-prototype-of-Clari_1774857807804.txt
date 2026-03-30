@@ -1,0 +1,118 @@
+Convert the existing static HTML/CSS prototype of “Clarity Loop” into a fully functional web application where all buttons, interactions, and features work with realistic behavior.
+
+🎯 Objective
+
+Transform the UI into a working system with:
+
+Functional navigation
+Interactive components
+Data-driven behavior
+Simulated backend logic
+⚙️ Core Functional Requirements
+1. Navigation System
+All pages (Home, Library, Reader, Dashboard, Auth) must be fully navigable
+Use:
+React Router OR JS-based routing
+Maintain active state and smooth transitions
+2. Story System (Core Feature)
+Load stories dynamically from mock data (JSON)
+Each story must include:
+Title
+Subject
+Story content
+Concept explanation
+Key points
+Exam questions
+
+👉 Clicking a story → opens Reader page with correct data
+
+3. Reader Page Functionality
+a. Progress Tracking
+Track scroll progress
+Update progress bar dynamically
+b. Highlight + Tooltip
+Select text → show tooltip
+Options:
+“Simplify” → show popup explanation
+“Ask Doubt” → send to doubt panel
+c. Exam Questions
+Click question → toggle answer visibility
+d. Exam Mode
+Button opens overlay
+Converts content into:
+Notes
+Bullet points
+Key answers
+4. Quiz System
+Multiple choice questions
+On click:
+Show correct/incorrect
+Store score
+Display result summary
+5. Student Dashboard (Working Logic)
+Load mock student data:
+{
+  "name": "Rahul",
+  "accuracy": 72,
+  "completedTopics": 12,
+  "weakTopics": ["Thermodynamics", "Probability"]
+}
+Show:
+Stats cards (dynamic)
+Weak topics with progress bars
+Continue learning section
+6. Teacher Dashboard
+Load mock class data:
+{
+  "students": 40,
+  "avgScore": 68,
+  "atRisk": 8
+}
+Show:
+Analytics charts (basic JS)
+Story performance
+At-risk students list
+7. Doubt Solving (Simulated AI)
+Input box → user enters doubt
+System responds using:
+Predefined responses OR simple logic mapping
+
+Example:
+
+If input contains “velocity” → return explanation
+8. Authentication (Frontend Only)
+Login / Signup forms
+Store user in:
+localStorage
+Role selection:
+Student
+Teacher
+Redirect based on role
+9. Data Handling
+Use:
+JSON files OR localStorage
+Simulate:
+User progress
+Quiz results
+Story completion
+10. All Buttons Must Work
+
+Ensure:
+
+Every button has:
+Click handler
+Visible response
+State change
+
+No dead buttons allowed.
+
+🎨 Maintain Existing UI
+Do NOT change design
+Only add functionality
+Keep:
+Animations
+Theme toggle
+Layout
+⚙️ Tech Stack
+
+Preferred:

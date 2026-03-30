@@ -1,0 +1,122 @@
+Build a high-performance web application for Clarity Loop that loads quickly on low-end devices and integrates study content with relevant YouTube videos.
+
+Objective
+
+Create a system that:
+
+Loads in under 2–3 seconds on average networks
+Uses minimal resources
+Links every learning topic to relevant YouTube videos
+Keeps user experience smooth and responsive
+Tech Requirements
+React (Vite)
+Lazy loading (React.lazy + Suspense)
+Code splitting
+LocalStorage for caching
+Optional: Service Worker for offline caching
+1. Performance Optimization (Mandatory)
+A. Code Splitting
+Split each page into separate bundles
+Load pages only when needed
+B. Lazy Loading
+Lazy load:
+Pages
+Images
+Heavy components (charts, dashboards)
+
+Example:
+
+const Reader = React.lazy(() => import('./pages/Reader'));
+C. Image Optimization
+Use compressed images (WebP preferred)
+Add lazy loading:
+<img loading="lazy" />
+D. Minimize Re-renders
+Use React.memo where needed
+Avoid unnecessary state updates
+E. Caching
+Store:
+Stories
+User progress
+Quiz results
+
+in localStorage
+
+Load from cache before fetching data
+F. Skeleton Loading UI
+Show placeholders while content loads
+Avoid blank screens
+2. Fast Data Handling
+Use local JSON instead of heavy APIs
+Preload frequently accessed data (e.g., last opened story)
+Debounce search input
+3. YouTube Integration (Core Feature)
+A. Data Structure
+
+Extend stories.json:
+
+{
+  "id": 1,
+  "title": "Velocity Concept",
+  "subject": "Physics",
+  "concept": "Velocity is speed with direction",
+  "youtubeLinks": [
+    {
+      "title": "Velocity Explained",
+      "url": "https://www.youtube.com/watch?v=example"
+    }
+  ]
+}
+B. Reader Page Integration
+Show a “Watch & Learn” section
+Display:
+Video title
+Thumbnail
+Play button
+Embed video using iframe:
+<iframe 
+  src="https://www.youtube.com/embed/VIDEO_ID"
+  loading="lazy"
+  allowfullscreen>
+</iframe>
+C. Smart Linking Logic
+If no video exists:
+Auto-generate search link:
+const searchUrl = `https://www.youtube.com/results?search_query=${topic}+concept`;
+D. UI Behavior
+Do not autoplay videos
+Load video only when user clicks
+Use thumbnail preview first
+4. Student Experience Flow
+Student opens story
+Reads content
+Sees related YouTube videos
+Clicks → watches without leaving app
+Returns to continue learning
+5. Additional Performance Enhancements
+Use CDN-friendly assets
+Reduce font loading (limit to 2–3 fonts)
+Avoid heavy animations
+Use CSS instead of JS where possible
+6. Offline/Low Network Handling (Optional but Strong)
+Cache last opened story
+Allow reading without internet
+Show message if video cannot load
+7. Strict Rules
+No heavy libraries unless necessary
+No blocking scripts
+No autoplay videos
+No full page reloads
+Output Requirements
+Fully working React app
+Fast initial load time
+Smooth navigation
+Working YouTube integration
+Clean and optimized code
+Final Goal
+
+The app should:
+
+Load instantly
+Feel smooth on low-end devices
+Combine reading + video learning seamlessly

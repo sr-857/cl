@@ -1,0 +1,142 @@
+Design a visually stunning, modern, and unconventional user interface for an educational platform called Clarity Loop, focused on storytelling-based learning for students and teachers.
+
+The design should feel premium, immersive, and emotionally engaging, not like a typical boring education website.
+
+Design Direction
+
+Create a design that combines:
+
+Storytelling aesthetics (editorial / magazine feel)
+Modern SaaS dashboard clarity
+Cinematic, immersive reading experience
+
+The result should feel like:
+
+A mix of a reading platform and a high-end product app
+Visually rich but still usable
+Visual Style Requirements
+1. Typography (Very Important)
+Use strong contrast between:
+Elegant serif fonts (for story content and headings)
+Clean sans-serif fonts (for UI and dashboards)
+Large, bold headings with tight spacing
+Comfortable, readable paragraph spacing
+2. Color System
+Use a dark-light hybrid theme
+Deep background tones (charcoal, warm black, or muted beige)
+Accent colors:
+Warm orange or amber (primary action)
+Emerald green (success/learning)
+Soft gold highlights (premium feel)
+Avoid generic blue-heavy UI
+3. Layout Style
+Use asymmetrical layouts
+Break grid where needed for visual interest
+Combine:
+Large hero sections
+Card-based components
+Floating panels
+Add depth using:
+Soft shadows
+Layered cards
+Subtle gradients
+4. Motion & Interaction
+Smooth transitions (not instant changes)
+Micro-interactions:
+Hover elevation
+Button feedback
+Progress animations
+Scroll-based effects:
+Parallax sections
+Fade-in content
+Page-Level Design Instructions
+Homepage
+Large hero section with:
+Bold headline
+Subtle animated background
+Story preview card (floating)
+Visual storytelling preview (like a book or card stack)
+Sections:
+How it works (visual flow, not text-heavy)
+Features with icons and motion
+Testimonials with clean cards
+Story Reader Page (Key Focus)
+
+Make this the most beautiful part of the app.
+
+Centered reading layout (like a premium blog)
+Wide margins for focus
+Smooth typography
+
+Add:
+
+Floating toolbar (bottom or side)
+Progress indicator at top
+Highlight effect on selected text
+
+Sections:
+
+Story (immersive)
+Concept (boxed, subtle background)
+Key points (clean list)
+Exam questions (interactive cards)
+Student Dashboard
+Modern card-based layout
+Clean analytics (not cluttered)
+
+Include:
+
+Progress cards
+Weekly activity chart
+Weak topics (visual indicators)
+
+Design style:
+
+Minimal but informative
+Focus on clarity and hierarchy
+Teacher Dashboard
+More structured and data-heavy
+Use tables + charts
+Highlight insights clearly
+
+Include:
+
+Student performance
+At-risk alerts
+Content performance
+UI Components Style
+
+Design components to feel:
+
+Soft, rounded corners
+Slight elevation (not flat)
+Clean spacing
+
+Buttons:
+
+Strong primary button (accent color)
+Subtle secondary buttons
+
+Cards:
+
+Slight shadow
+Hover lift effect
+Interaction Philosophy
+Every interaction should feel intentional
+Avoid clutter
+Prioritize readability over decoration
+Constraints
+Do not make it overly flashy or distracting
+Maintain usability for students
+Keep accessibility in mind (contrast, readability)
+Output Requirements
+Complete UI design system
+Consistent styling across all pages
+Ready-to-convert into React frontend
+Core Design Goal
+
+Create a design where:
+
+Students enjoy reading
+Teachers trust the system
+The product feels premium and different
